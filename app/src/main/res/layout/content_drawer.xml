@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:padding="5pt"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:textSize="20pt"
+        android:textStyle="bold"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This app is used to do bla blabla..choose any package view adds for few seconds and get paid for it we are providing u a platform where you caninvest and earn utilizing our spare time."/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="110pt"
+        android:id="@+id/package1"
+        android:layout_margin="5pt"
+        app:cardElevation="4pt"
+        android:elevation="4pt"
+        android:padding="5pt"
+        app:cardCornerRadius="4pt"
+        app:cardBackgroundColor="@color/design_default_color_primary">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/package_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PACKAGE 1"
+        android:layout_marginTop="7pt"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:textSize="10pt"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rs.100"
+            android:textStyle="bold"
+            android:textSize="20pt"
+            android:gravity="center"
+            android:layout_below="@+id/package_name"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total adds: 30"
+        android:textColor="#ffffff"
+        android:textStyle="normal"
+        android:textSize="10pt"
+        android:gravity="center"
+        android:layout_below="@+id/add"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/per_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:text="Per Add=2.30"
+        android:textColor="#ffffff"
+        android:textSize="10pt"
+        android:textStyle="normal" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="65pt"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/per_add"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/round"
+        android:gravity="center"
+        android:padding="2pt"
+        android:text="Buy Package"
+        android:textAllCaps="false"
+        android:layout_marginTop="0dp"
+        />
+
+
+</RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>
+
+</ScrollView>
+
